@@ -1,12 +1,12 @@
-nota1= 9.0
-nota2= 8.7
-nota3= 7.5
-nota4= 10
+notas = [9.0, 8.5, 9.1, 7.0]
+medianotas= 0.0
 
-print(nota1)
-print(nota2)
-print(nota3)
-print(nota4)
+for i in range (0, len(notas)):
+    print ('nota', i+1, "=", notas[i])
+    medianotas=medianotas+notas[i]
+media = medianotas / len (notas)
+print('Média:', media)
 
-medianotas= (nota1+nota2+nota3+nota4)/4
-print(medianotas)
+
+
+
